@@ -1,0 +1,226 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+\usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\usepackage{titlesec}
+\usepackage{xcolor}
+
+\titleformat{\section}
+  {\color{black}\large\scshape\raggedright}
+  {}{0em}{}[\vspace{-1pt}\titlerule\vspace{-4pt}]
+\titlespacing*{\section}{0pt}{10pt}{10pt}
+
+
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubText}[1]{
+    \vspace{-5pt}\item
+  {\small #1}\vspace{-2pt}
+}
+
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[1]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge  Kenneth Liu} \\ \vspace{1pt}
+    \small 979-661-4987 $|$ \href{mailto:liu.h.kenneth@gmail.com}{\underline{liu.h.kenneth@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/kennethhliu}{\underline{linkedin.com/in/kennethhliu/}}
+    $|$ 
+    \href{https://github.com/kennethliu0}{\underline{github.com/kennethliu0}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Stanford University}{Stanford, CA}
+      {Bachelor of Science in Computer Science}{Jun. 2028}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+     \resumeSubheading
+      {Software Engineering Intern}{Houston, TX}
+      {Baker Engineering and Risk Consultants, Inc.}{Jun. 2024 -- Aug. 2024}
+      \resumeItemListStart
+        \resumeItem{Developed event tree analysis software in \textbf{C\#/.NET WPF} with dynamic tree editing, reducing analysis time by \textbf{80\%}}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Teaching Assistant}{Online}
+      {ScioVirtual Foundation}{Jul. 2023 -- Jul. 2025}
+      \resumeItemListStart
+        \resumeItem{Developed course content and coordinated with co-instructors to create contests, assignments, and homework}
+        \resumeItem{Taught \textbf{80} students total HTML/CSS, C++/USA Computing Olympiad, and Python over 3 summer camps}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+  
+\section{Projects}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+              {\href{https://internnest.net}{\underline{\textbf{InternNest}}} $|$ \emph{JavaScript, React, Express.js, Node.js, MongoDB}}
+              \resumeItemListStart
+                \resumeItem{Built housing marketplace serving \textbf{100+} interns with \textbf{React}, \textbf{Express.js}, and \textbf{RESTful APIs}}
+                \resumeItem{Designed \textbf{MongoDB} schema for complex user relationships and preferences, built admin dashboard with property and user management features}
+                \resumeItem{Secured \textbf{\$20,000} seed funding and placing in the \textbf{top 3\%} ranking of \textbf{YCombinator}'s startup program}
+              \resumeItemListEnd
+
+       \resumeProjectHeading
+        {\href{https://decanter.app}{\underline{\textbf{Decanter}}} $|$ \emph{JavaScript, Typescript, Next.js, Node.js, Supabase, PostgreSQL}}
+        \resumeItemListStart
+            \resumeItem{Built volunteer management platform for Science Olympiad tournaments using \textbf{Next.js} and \textbf{Supabase}, implementing Google \textbf{OAuth} authentication, attracting \textbf{75+} users in the first month}
+            \resumeItem{Implemented \textbf{responsive, type-safe} React forms using \textbf{React Hook Form} and \textbf{Zod}, improving client-side validation performance and reducing server-side validation calls}
+            \resumeItem{Used \textbf{Vitest} to automate unit testing on server functions with \textbf{97\%} code coverage, enhancing codebase resiliency}
+        \resumeItemListEnd  
+              
+      \resumeProjectHeading
+        {\href{https://kennethliu0.github.io/remix}{\underline{\textbf{Remix}}} $|$ \emph{JavaScript, TypeScript, React, Vite, GitHub Actions}}
+        \resumeItemListStart
+            \resumeItem{Developed a React.js application that resequences Spotify playlists using Traveling Salesman Problem heuristics to create smooth transitions based on audio features, reducing average Euclidean distance between audio feature vectors by \textbf{58\%}}
+            \resumeItem{Integrated \textbf{Spotify OAuth} for secure access to playlists and deployed static site with \textbf{Github Actions}}
+        \resumeItemListEnd
+      
+       
+        
+      \resumeProjectHeading
+          {\textbf{OttoGrade} $|$ \emph{Python, Flask, SymPy}}
+          \resumeItemListStart
+            \resumeItem{Built a full-stack web application to accelerate assignment grading for teachers}
+            \resumeItem{Collaborated with a team of developers to integrate \textbf{OCR} and \textbf{LaTeX} conversion modules, ensuring accurate processing of handwritten math}
+            \resumeItem{Developed \textbf{Flask API} for automated math grading with \textbf{SymPy} integration, including input sanitization and intelligent parsing rules to handle diverse notation formats}
+            \resumeItem{Demoed automated math grading technology to the \textbf{US Air Force Academy Preparatory School}, receiving adoption interest for integration into high school classrooms}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C\#, C++, CSS, HTML, Java, JavaScript/TypeScript, Python} \\  
+     \textbf{Tools}{: Azure DevOps, Git, Linux, VS Code, Visual Studio} \\
+     \textbf{Frameworks}{: Express.js, React, .NET, Next.js, Node.js} \\
+     \textbf{Databases}{: SQL, MongoDB, PostgreSQL}
+    }}
+ \end{itemize}
+
+
+\section{Honors}
+    \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     3x American Invitational Mathematics Examination (AIME) qualifier \\ 
+     American Computer Science League Bronze Medal
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
