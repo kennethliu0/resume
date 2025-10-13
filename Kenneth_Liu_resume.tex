@@ -18,6 +18,7 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
+\usepackage{fontawesome}
 \input{glyphtounicode}
 
 
@@ -32,6 +33,11 @@
 % \usepackage{CormorantGaramond}
 \usepackage{charter}
 
+\makeatletter
+\newcommand{\github}[1]{%
+   \href{#1}{\faGithub}%
+}
+\makeatother
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -166,13 +172,13 @@
         \resumeProjectHeading
               {\href{https://internnest.net}{\underline{\textbf{InternNest}}} $|$ \emph{JavaScript, React, Express.js, Node.js, MongoDB}}
               \resumeItemListStart
-                \resumeItem{Built housing marketplace serving \textbf{100+} interns with \textbf{React}, \textbf{Express.js}, and \textbf{RESTful APIs}}
+                \resumeItem{Collaborated with a team to build a housing marketplace serving \textbf{100+} interns with \textbf{React}, \textbf{Express.js}, and \textbf{RESTful APIs}}
                 \resumeItem{Designed \textbf{MongoDB} schema for complex user relationships and preferences, built admin dashboard with property and user management features}
                 \resumeItem{Secured \textbf{\$20,000} seed funding and placing in the \textbf{top 3\%} ranking of \textbf{YCombinator}'s startup program}
               \resumeItemListEnd
 
        \resumeProjectHeading
-        {\href{https://decanter.app}{\underline{\textbf{Decanter}}} $|$ \emph{JavaScript, Typescript, Next.js, Node.js, Supabase, PostgreSQL}}
+        {\href{https://decanter.app}{\underline{\textbf{Decanter}}} \github{https://github.com/kennethliu0/decanter} $|$ \emph{JavaScript, Typescript, Next.js, Node.js, Supabase, PostgreSQL}}
         \resumeItemListStart
             \resumeItem{Built volunteer management platform for Science Olympiad tournaments using \textbf{Next.js} and \textbf{Supabase}, implementing Google \textbf{OAuth} authentication, attracting \textbf{75+} users in the first month}
             \resumeItem{Implemented \textbf{responsive, type-safe} React forms using \textbf{React Hook Form} and \textbf{Zod}, improving client-side validation performance and reducing server-side validation calls}
@@ -180,7 +186,7 @@
         \resumeItemListEnd  
               
       \resumeProjectHeading
-        {\href{https://kennethliu0.github.io/remix}{\underline{\textbf{Remix}}} $|$ \emph{JavaScript, TypeScript, React, Vite, GitHub Actions}}
+        {\href{https://kennethliu0.github.io/remix}{\underline{\textbf{Remix}}} \github{https://github.com/kennethliu0/remix} $|$ \emph{JavaScript, TypeScript, React, Vite, GitHub Actions}}
         \resumeItemListStart
             \resumeItem{Developed a React.js application that resequences Spotify playlists using Traveling Salesman Problem heuristics to create smooth transitions based on audio features, reducing average Euclidean distance between audio feature vectors by \textbf{58\%}}
             \resumeItem{Integrated \textbf{Spotify OAuth} for secure access to playlists and deployed static site with \textbf{Github Actions}}
