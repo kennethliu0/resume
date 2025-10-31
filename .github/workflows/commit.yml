@@ -1,0 +1,21 @@
+name: Publish to GitHub Repository
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@commit
+      - name: Compile and Deploy
+        uses: kennethliu0/pubtex-action@main
+        with:
+          deploy_key: ${{ secrets.PORTFOLIO_DEPLOY_KEY }}
+          target_repository: kennethliu0/kennethliu0.github.io
+          publish_dir: public
+          files: |
+            Kenneth_Liu_resume.tex
