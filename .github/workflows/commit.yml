@@ -10,9 +10,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@commit
+      - uses: actions/checkout@main
       - name: Compile and Deploy
-        uses: kennethliu0/pubtex-action@main
+        uses: kennethliu0/pubtex-action@commit
         with:
           deploy_key: ${{ secrets.PORTFOLIO_DEPLOY_KEY }}
           target_repository: kennethliu0/kennethliu0.github.io
